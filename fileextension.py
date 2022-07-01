@@ -1,6 +1,6 @@
 filename = input("filename = ")
 f_extns = filename.split(".")
-print("extension = " + repr(f_extns[-1]))
+print("extension = " + f_extns[-1])
 
     
     
