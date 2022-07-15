@@ -1,10 +1,14 @@
-def Fibonacci(n):
-    if n == 0:
-        return 0
-    elif n == 1:
-        return 1
+def fib(n):
+    a = 0
+    b = 1
+    if n == 1:
+        print(a)
     else:
-        return Fibonacci(n-1) + Fibonacci(n-2)
-
-list1 = [x for x in range(39)]
-list2 = [i for i in list1 if Fibonacci(i) % 2 == 0]
+        print(a)
+        print(b)
+        for i in range(2,n):
+            c = a + b
+            a = b
+            b = c
+            print(c)
+fib(20)
